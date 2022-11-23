@@ -1,0 +1,46 @@
+The things we will name is Java are:
+1. Packages
+2. Classes
+3. Interfaces
+4. Methods
+5. Constants
+6. Variables
+7. Type Parameters
+_______________________________________________________
+Packages: (Are the way of grouping related classes and interfaces together, easy to navigate through the project, Classes within the package can have unrestricted access to one another
+            while still restricted access for classes outside the package).
+- are always lowe case.
+- should have unique names
+- internal domain name reversed as a prefix for packages ( java.lang, java.io, org.xml.sax.helpers, com.timbuchalka.autoboxing )
+- any invalid characters in domain name (/, \, - etc..) should be replaced with an _underscore (Experts-exchange.com --> com.experts_exchange)
+- domain name components starting with a number should instead start with an _underscore (1world.com --> com._1world)
+- domain name components that are Java keywords should should have that component start with _underscore ( Switch.supplier.com --> com.supplier._switch ) switch is a java keyword
+
+Class Names:
+- are CamelCase
+- should be nouns
+- starts with a capital letter and each word in the name should be capital (e.g. LinkedList)
+- examples: ArrayList, GearBox ......
+
+Interfaces:
+- Cap like class names (CamelCase).
+- Consider what object implementing the interface will become of what they will be able to do.
+
+Methods:
+- mixedCase
+- Often verbs
+- Reflect the function performed or the result returned.
+- examples: .size(), .getName(), .addPlayer() ....
+
+Constants: (Are used to define a value that never changes)
+- ALL UPPER_CASE
+- separate words with _ underscore
+- declared using the final keyword
+- ( Static final int MAX_INT, Static final short SEVERITY_ERROR, Static final double PI
+
+Variable/field names:
+- mixedCase
+- start with lower case
+-  do not use _ underscore
+- examples: ( String myName = "name"; int myIntegerNumber = 234; char myFirstNameInitial = 'F'; )
+
